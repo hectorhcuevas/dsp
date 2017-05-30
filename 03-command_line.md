@@ -67,6 +67,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 
 > > 
-Xargs is used when the output of a command is expected to be one or more space/newline seperated results. This is useful in several cases, particularly in order to avoid *Argument list* to long errors.
+Xargs is used when the output of a command is expected to be one or more space/newline seperated results. This is useful in several cases, particularly in order to avoid *Argument list too long* errors.
  
 
