@@ -47,7 +47,9 @@ What do the following commands do:
 * ls -l:	Long listing
 * ls -a:	Listing including hidden files
 * ls -lh	:Long listing with Human readable file sizes
-
+* ls -lah: Displays long list, including hidden files with a human readable file size
+* ls -t	Displays newest files first (based on timestamp)
+* ls -Glp: Displays a long list, excluding groupd names and including directories with /  
 ---
 
 ### Q3.  More List Files in Unix  
