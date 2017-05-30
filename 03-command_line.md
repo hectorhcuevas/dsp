@@ -26,8 +26,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 * touch –a file: creating a file using `touch` command
 * rm Filename: deleting a file
 * mv filename1.ext filename2.ext renaming a file
-* listing hidden files
-* copying a file from one directory to another
+* ls -a: listing hidden files
+* cp [file] [dir]: copying a file from one directory to another
 
 ---
 
@@ -42,7 +42,11 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+* ls:	Short listing
+* ls -l:	Long listing
+* ls -a:	Listing including hidden files
+* ls -lh	:Long listing with Human readable file sizes
 
 ---
 
@@ -50,15 +54,19 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > 
+* -r	Displays files in reverse order.
+* -R	Displays subdirectories as well.
+* -t	Displays newest files first. (based on timestamp)
+* -u	Displays files by the file access time.
+* -x	Displays files as rows across the screen.
 ---
 
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > 
+Xargs is used when the output of a command is expected to be one or more space/newline seperated results. This is useful in several cases, particularly in order to avoid *Argument list* to long errors.
  
 
