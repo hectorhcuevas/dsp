@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> My preferred choice will be Vim for its ease of use (fewer keys required for simple tasks) and portability. 
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will be utilizing a combination of vim and Spyder as my graphical editors. I chose Spyder because I was already somewhat familiar with it and enjoyed the configured setup. A few useful shortcuts includeL cmd + enter to run selected cell(s), cmd+1 to comment/uncomment selected line, and cmd+L to go to a specific line. 
 
  
