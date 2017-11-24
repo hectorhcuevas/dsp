@@ -35,10 +35,10 @@ This also means that lists are better for sorting a list of ordered elements, wh
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> The lambda function is a way to create an anonymous function which will only be utilized once and then be forgotten. This makes it particularly useful as a parameter in various other functions including Mao, Reduce, and Sorted. When sorting a list for example, we can use a lambda function as the 'key' argument to specify any operation or transformation we would like to make to the items on the list before comparing them. An example would be as follows: 
-mylist = [3,6,3,2,4,8,23]
-sorted(mylist, key=lambda, x%2==0) 
-3,3,23,6,2,4,8 ##output 
+>> The lambda function is a way to create an anonymous function which will only be utilized once and then be forgotten. This makes it particularly useful as a parameter in various other functions including Mao, Reduce, and Sorted. When sorting a list for example, we can use a lambda function as the 'key' argument to specify any operation or transformation we would like to make to the items on the list before comparing them. An example would be as follows:   
+mylist = [3,6,3,2,4,8,23]  
+sorted(mylist, key=lambda, x%2==0)   
+3,3,23,6,2,4,8 ##output   
 The example above utilizes lambda to check for even numbers and apply the sorted function once this is complete. 
 
 
