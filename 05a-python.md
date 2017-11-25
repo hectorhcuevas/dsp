@@ -51,8 +51,8 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehension is an operator which is Python's way of implementing well-known notations for sets similar to those used by mathematicians. For example,  S = [x**2 for x in range(10)]  
 >>> V = [2**i for i in range(13)]   M = [x for x in S if x % 2 == 0]  
-prins S; print V; print M  [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-[1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]
+prins S; print V; print M  [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]  
+[1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]  
 [0, 4, 16, 36, 64]
 ---
 
