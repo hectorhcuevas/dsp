@@ -49,14 +49,19 @@ The example above utilizes lambda to check for even numbers and apply the sorted
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehension is an operator which is Python's way of implementing well-known notations for sets similar to those used by mathematicians. For example,     
-S = [x**2 for x in range(10)]      
-V = [2**i for i in range(13)]  
-M = [x for x in S if x % 2 == 0]        
-prins S; print V; print M  
-[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]    
-[1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]    
-[0, 4, 16, 36, 64]
+>> List comprehension is an operator which is Python's way of implementing well-known notations for sets similar to those used by mathematicians. For example,  
+t = ['apple','orange','pear','carrot','potato','pea']  
+def capitalize_all(t):  
+    res = []  
+    for s in t:  
+        res.append(s.capitalize())  
+    return res
+capitalize_all(t)  
+['Apple', 'Orange', 'Pear', 'Carrot', 'Potato', 'Pea'] *output*  
+      
+Most common list operations can be expressed as a combination of map, filter and reduce. These are so common that Python provides language features to support them, including list comprehension and a built in function called map. Below are two further examples. The first shows examples of list comprehension using map while the second example uses filter. 
+
+
 ---
 
 ### Complete the following problems by editing the files below:
