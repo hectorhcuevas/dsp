@@ -145,6 +145,13 @@ def not_bad(s):
     "It's bad yet not"
     """
     raise NotImplementedError
+    
+    def not_bad(s1):
+    if 'not' and 'bad' in s1 and s1.find('not') < s1.find('bad'):
+        s2 = str.replace(s1,s1[s1.find('not'):(s1.find('bad')+3)],'good')
+        return s2
+    else:
+        return s1
 
 
 def front_back(a, b):
