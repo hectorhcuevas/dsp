@@ -93,6 +93,13 @@ def mix_up(a, b):
     'fizzy perm'
     """
     raise NotImplementedError
+    
+    def mix_up(str1, str2):
+    char1 = str1[0:2]
+    char2 = str2[0:2]    
+    str1 = str1.replace(char1, char2)
+    str2 = str2.replace(char2, char1)   
+    return str1+ ' ' + str2
 
 
 def verbing(s):
