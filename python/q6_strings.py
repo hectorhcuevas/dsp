@@ -19,6 +19,12 @@ def donuts(count):
     'Number of donuts: many'
     """
     raise NotImplementedError
+    
+    def donuts(count):
+    if count <= 9:
+        print('Number of donuts: ' + str(count))
+    elif count >=9:
+        print('Number of donuts: many')
 
 
 def both_ends(s):
@@ -38,6 +44,12 @@ def both_ends(s):
     'xyyz'
     """
     raise NotImplementedError
+    
+def both_ends(s):
+    if len(s) >=2:
+        return s[0:2] + s[-2] + s[-1]
+    else:
+        return ''
 
 
 def fix_start(s):
@@ -57,6 +69,12 @@ def fix_start(s):
     'donut'
     """
     raise NotImplementedError
+    
+    def fix_start1(str):
+    char = str[0] 
+    str = str.replace(char, '*')
+    str = char + str[1:]
+    return str
 
 
 def mix_up(a, b):
