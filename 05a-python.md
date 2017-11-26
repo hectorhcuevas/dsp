@@ -59,7 +59,7 @@ def capitalize_all(t):
     return res
 capitalize_all(t)  
 ['Apple', 'Orange', 'Pear', 'Carrot', 'Potato', 'Pea'] *output*  
-      
+        
 *Using Filter*  
 def only_upper(t):  
     caps = []  
