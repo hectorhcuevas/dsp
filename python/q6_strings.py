@@ -117,6 +117,14 @@ def verbing(s):
     'do'
     """
     raise NotImplementedError
+    
+    def verbing(str1):
+    if len(str1) >= 3 and str1[-3:] != 'ing':
+        return str1+'ing'
+    elif len(str1) >= 3 and str1[-3:] == 'ing':
+        return str1+'ly'  
+    else:
+        return str1
 
 
 def not_bad(s):
