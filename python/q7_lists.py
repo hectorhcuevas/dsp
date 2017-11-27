@@ -41,6 +41,17 @@ def front_x(words):
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
     raise NotImplementedError
+    
+    def front_x(words):
+    lst1 = []
+    lst2 = []
+    for x in words:
+        if x[0] != 'x':
+            lst1.append(x)
+        elif x[0] == 'x':
+            lst2.append(x)
+    return sorted(lst2) + sorted(lst1)
+            
 
 
 def sort_last(tuples):
