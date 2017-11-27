@@ -16,6 +16,14 @@ def match_ends(words):
     1
     """
     raise NotImplementedError
+    
+    def match_ends(words):
+    counts = []
+    for x in words:
+        if len(x) >= 2: 
+            if x[0] == x[-1]: ##and len(x) >= 2:
+                counts.append(x)
+    return len(counts) 
 
 
 def front_x(words):
