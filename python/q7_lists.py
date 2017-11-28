@@ -69,6 +69,12 @@ def sort_last(tuples):
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
     raise NotImplementedError
+    
+    def sort_last(tuples):
+        def my_func(s):
+            return s[-1]
+        for x in tuples:
+            return sorted(tuples, key=my_func)
 
 
 def remove_adjacent(nums):
