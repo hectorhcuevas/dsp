@@ -22,22 +22,29 @@ def Titles():
         print((Counter(titles)))
 Q3:
 def email_list():
-    import pandas as pd
-    df2 = pd.read_csv('faculty.csv', delimiter=',')
-    lst = []
-    for x in list(df2[' email']):
-        if x not in lst:
-            lst.append(x)
-    print(lst)
+    import csv
+    with open('faculty.csv', 'r') as csv_file:
+        reader = csv.reader(csv_file)
+        email = []
+        for row in reader:
+            from collections import Counter
+            if row[2] not in email: 
+                email.append(row[3])
+        print(email)
  Q4
-def Domains():
-    import pandas as pd
-    df2 = pd.read_csv('faculty.csv', delimiter=',')
-    mail = df2[' email']
-    lst = []
-    answer = []
-    for x in mail:
-        if x not in lst:
-            lst.append(x)
+def domains():
+    import csv
+    with open('faculty.csv', 'r') as csv_file:
+        reader = csv.reader(csv_file)
+        email = []
+        lst = []
+        answer = []
+        for row in reader:
+            from collections import Counter
+            if row[2] not in email: 
+                email.append(row[3])
+                for x in email:
+                    if x not in answer:
+                        lst.append(x)
             answer.append(str(lst[-1]).rsplit('@',1)[-1])
     print(list(set(answer)))
