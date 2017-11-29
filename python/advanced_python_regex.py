@@ -23,7 +23,9 @@ def Domains():
     df2 = pd.read_csv('faculty.csv', delimiter=',')
     mail = df2[' email']
     lst = []
+    answer = []
     for x in mail:
         if x not in lst:
             lst.append(x)
-            answer = [str(lst[-1]).rsplit('@',1)[-1]]
+            answer.append(str(lst[-1]).rsplit('@',1)[-1])
+    print(set(answer))
