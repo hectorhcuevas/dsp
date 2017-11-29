@@ -28,4 +28,4 @@ def Domains():
         if x not in lst:
             lst.append(x)
             answer.append(str(lst[-1]).rsplit('@',1)[-1])
-    print(set(answer))
+    print(list(set(answer)))
