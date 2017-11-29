@@ -10,10 +10,16 @@ def Degrees():
                 degrees.append(row[1][1:])
         print((Counter(degrees)))
 Q2:
-def Faculty_titles():
-    import pandas as pd
-    df2 = pd.read_csv('faculty.csv', delimiter=',')
-    print(df2[' title'].value_counts())
+def Titles():
+    import csv
+    with open('faculty.csv', 'r') as csv_file:
+        reader = csv.reader(csv_file)
+        titles = []
+        for row in reader:
+            from collections import Counter
+            if row[2] not in degrees: 
+                titles.append(row[2][1:])
+        print((Counter(titles)))
 Q3:
 def email_list():
     import pandas as pd
