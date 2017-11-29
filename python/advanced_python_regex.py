@@ -13,10 +13,10 @@ def email_list():
     import pandas as pd
     df2 = pd.read_csv('faculty.csv', delimiter=',')
     lst = []
-    for email in df2[' email']:
-        if email not in lst:
-            lst.append(email)
-            print(lst[-1])
+    for x in list(df2[' email']):
+        if x not in lst:
+            lst.append(x)
+    print(lst)
  Q4
 def Domains():
     import pandas as pd
