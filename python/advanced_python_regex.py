@@ -32,19 +32,15 @@ def email_list():
                 email.append(row[3])
         print(email)
  Q4
-def domains():
+def Domains():
     import csv
     with open('faculty.csv', 'r') as csv_file:
         reader = csv.reader(csv_file)
         email = []
-        lst = []
         answer = []
         for row in reader:
             from collections import Counter
             if row[2] not in email: 
                 email.append(row[3])
-                for x in email:
-                    if x not in answer:
-                        lst.append(x)
-            answer.append(str(lst[-1]).rsplit('@',1)[-1])
+            answer.append(str(email[-1]).rsplit('@',1)[-1])
     print(list(set(answer)))
