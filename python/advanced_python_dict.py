@@ -10,7 +10,7 @@ for row in reader:
     last = full[-1]
     first = full[0]
     if "." in last:
-        middle = name.partition
+        middle = last[0]
         last = name[3:]
     result[last] = row[1:]
         
@@ -27,6 +27,6 @@ for row in reader:
     last = full[-1]
     first = full[0]
     if "." in last:
-        middle = name.partition
+        middle = last[0]
         last = name[3:]
     result[last,first] = row[1:]
