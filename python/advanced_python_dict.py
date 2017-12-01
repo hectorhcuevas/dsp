@@ -1,38 +1,32 @@
 PLACE YOUR CODE HERE
 
 Q6:
-  with open('faculty.csv', mode='r') as infile:
-    reader = csv.reader(infile)
-    name = []
-    for rows in reader:
-        name = rows[0].partition(" ")
-        #print(name)
-        last = (name[-1])
-        first = (name[0])
-        v = rows[1:]
-        if "." in last:
-            Middle_initial = last[0]
-            last = last[3:]
-        for x in name:
-            mydict = {last:v}
-        print(mydict)
+import csv
+reader = csv.reader(open('faculty.csv'))
+result = {}
+for row in reader:
+    name = row[0]
+    full = name.partition(" ")
+    last = full[-1]
+    first = full[0]
+    if "." in last:
+        middle = name.partition
+        last = name[3:]
+    result[last] = row[1:]
         
         
         
 Q7:
   
-  with open('faculty.csv', mode='r') as infile:
-    reader = csv.reader(infile)
-    name = []
-    for rows in reader:
-        name = rows[0].partition(" ")
-        #print(name)
-        last = (name[-1])
-        first = (name[0])
-        v = rows[1:]
-        if "." in last:
-            Middle_initial = last[0]
-            last = last[3:]
-        for x in name:
-            mydict = {(first,last):v}
-        print(mydict)
+import csv
+reader = csv.reader(open('faculty.csv'))
+result = {}
+for row in reader:
+    name = row[0]
+    full = name.partition(" ")
+    last = full[-1]
+    first = full[0]
+    if "." in last:
+        middle = name.partition
+        last = name[3:]
+    result[last,first] = row[1:]
