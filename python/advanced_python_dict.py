@@ -34,5 +34,5 @@ Q7:
             Middle_initial = last[0]
             last = last[3:]
         for x in name:
-            mydict = {first,last:v}
+            mydict = {(first,last):v}
         print(mydict)
