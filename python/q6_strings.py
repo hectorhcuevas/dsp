@@ -20,7 +20,7 @@ def donuts(count):
     """
     raise NotImplementedError
     
-    def donuts(count):
+def donuts(count):
     if count <= 9:
         print('Number of donuts: ' + str(count))
     elif count >=10:
@@ -70,7 +70,7 @@ def fix_start(s):
     """
     raise NotImplementedError
     
-    def fix_start1(str):
+def fix_start1(str):
     char = str[0] 
     str = str.replace(char, '*')
     str = char + str[1:]
