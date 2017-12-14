@@ -94,7 +94,7 @@ def mix_up(a, b):
     """
     raise NotImplementedError
     
-    def mix_up(str1, str2):
+def mix_up(str1, str2):
     char1 = str1[0:2]
     char2 = str2[0:2]    
     str1 = str1.replace(char1, char2)
