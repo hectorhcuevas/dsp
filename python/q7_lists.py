@@ -17,7 +17,7 @@ def match_ends(words):
     """
     raise NotImplementedError
     
-    def match_ends(words):
+def match_ends(words):
     counts = []
     for x in words:
         if len(x) >= 2: 
@@ -42,7 +42,7 @@ def front_x(words):
     """
     raise NotImplementedError
     
-    def front_x(words):
+def front_x(words):
     lst1 = []
     lst2 = []
     for x in words:
