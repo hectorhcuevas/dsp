@@ -23,7 +23,7 @@ def donuts(count):
     def donuts(count):
     if count <= 9:
         print('Number of donuts: ' + str(count))
-    elif count >=9:
+    elif count >=10:
         print('Number of donuts: many')
 
 
