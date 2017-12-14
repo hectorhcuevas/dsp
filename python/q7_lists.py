@@ -95,7 +95,7 @@ def remove_adjacent(nums):
     """
     raise NotImplementedError
     
-    def remove_adjacent(nums):
+def remove_adjacent(nums):
     a = []
     for item in nums:
         if len(a):
@@ -121,5 +121,5 @@ def linear_merge(list1, list2):
     """
     raise NotImplementedError
     
-    def linear_merge(list1, list2):
+def linear_merge(list1, list2):
     return sorted(list1+list2)
