@@ -118,7 +118,7 @@ def verbing(s):
     """
     raise NotImplementedError
     
-    def verbing(str1):
+def verbing(str1):
     if len(str1) >= 3 and str1[-3:] != 'ing':
         return str1+'ing'
     elif len(str1) >= 3 and str1[-3:] == 'ing':
@@ -146,7 +146,7 @@ def not_bad(s):
     """
     raise NotImplementedError
     
-    def not_bad(s1):
+def not_bad(s1):
     if 'not' and 'bad' in s1 and s1.find('not') < s1.find('bad'):
         s2 = str.replace(s1,s1[s1.find('not'):(s1.find('bad')+3)],'good')
         return s2
@@ -172,7 +172,7 @@ def front_back(a, b):
     """
     raise NotImplementedError
     
-    def front_back(a, b):
+def front_back(a, b):
     if (len(a)%2) == 0:
         a_front = a[0:(int(len(a)/2))]
         a_back = a[(int(len(a)/2)):(int(len(a)+1))]
