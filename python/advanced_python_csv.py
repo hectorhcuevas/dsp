@@ -10,8 +10,6 @@ def email_list():
                 email.append(row[3])
         print(email)
         
-import csv
-
-with open("emails.csv",'w') as resultFile:
-    wr = csv.writer(resultFile)
-    wr.writerow(email)
+    with open("emails.csv",'w') as resultFile:
+        wr = csv.writer(resultFile)
+        wr.writerow(email)
