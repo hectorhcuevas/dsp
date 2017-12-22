@@ -10,6 +10,7 @@ for row in reader:
     last = full[-1]
     first = full[0]
     result[last] = row[1:]
+print(result)
         
         
         
@@ -24,3 +25,4 @@ for row in reader:
     last = full[-1]
     first = full[0]
     result[last,first] = row[1:]
+print(result)
