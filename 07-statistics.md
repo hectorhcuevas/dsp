@@ -88,7 +88,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >> One way to think of this problem is by imagining we have a sample of 3000 births. According to the probabilities provided, in such a sample we could expect 3000/125=24 fraternal twins and 3000/300=10 identical twins. Furthermore we can conclude that the group of fraternal twins will be distributed in such a way that we can assume there are 6 boy-boy fraternal twins. Similarly we can conclude that, because identical twins are of the same sex, 5 of those identical twins are also boy-boy. that means we would have a total of 11 boy-boy twins and given that we know Elvis' twin was male, we know that there is a 5/11 chance he was indeed an identical twin.  
   
-In bayesian notation, we know that:  
+>> In bayesian notation, we know that:  
 P(identical twins & twin brother) = Pr(identical twins)Pr(both boys|identical twins)= 1/2 * 1/300  
 P(fraternal twins & twin brother) = Pr(fraternal twins)Pr(both boys|fraternal twins)= 1/4 * 1/125  
   
