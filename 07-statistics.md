@@ -88,12 +88,22 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >> One way to think of this problem is by imagining we have a sample of 3000 births. According to the probabilities provided, in such a sample we could expect 3000/125=24 fraternal twins and 3000/300=10 identical twins. Furthermore we can conclude that the group of fraternal twins will be distributed in such a way that we can assume there are 6 boy-boy fraternal twins. Similarly we can conclude that, because identical twins are of the same sex, 5 of those identical twins are also boy-boy. that means we would have a total of 11 boy-boy twins and given that we know Elvis' twin was male, we know that there is a 5/11 chance he was indeed an identical twin. 
 
+In bayesian notation, we know that:
+P(identical twins & twin brother) = Pr(identical twins)Pr(both boys|identical twins)= 1/2 * 1/300
+P(fraternal twins & twin brother) = Pr(fraternal twins)Pr(both boys|fraternal twins)= 1/4 * 1/125
+
+Thus the conditional probability that Elvis was an identical twin is:
+Pr(identical twins|twin brother) = Pr(identical twins|twin brother)/Pr(twin brother) = 
+((1/2)(1/300))/((1/2)(1/300)+(1/4)(1/125)) = 5/11
+
+
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
 >> Bayesian and frequentist statistics differ in their approach to parameters. A bayesian approach describes parameters probabilistically and uses previous historical outcomes in their model. For example, they might say that there is a 95% chance (given the data observed) that the population mean is between 2.4 and 4.2. Meanwhile, a frequentist approach doesn't specify parameters in terms of probability, but rather tries to use probability objectively with a certain confidence interval. They would instead say that, with 95% confidence, the population mean is between 2.4 and 4.2; meaning 95% of samples' mean will be contained within these upper and lower bounds.
+
 
 ---
 
