@@ -91,7 +91,6 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 >> In bayesian notation, we know that:  
 P(identical twins & twin brother) = Pr(identical twins)Pr(both boys|identical twins)= 1/2 * 1/300  
 P(fraternal twins & twin brother) = Pr(fraternal twins)Pr(both boys|fraternal twins)= 1/4 * 1/125  
-  
 Thus the conditional probability that Elvis was an identical twin is:  
 Pr(identical twins|twin brother) = Pr(identical twins|twin brother)/Pr(twin brother) =   
 ((1/2)(1/300))/((1/2)(1/300)+(1/4)(1/125)) = 5/11  
