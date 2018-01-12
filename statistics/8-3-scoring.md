@@ -2,6 +2,6 @@
 
 ---
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The RMSE for this method of estimating lambda was about 1.4. Additionally, our estimator appears unbiased as the mean error is small and decreases with m. 
 
 ---
